@@ -75,9 +75,9 @@ contract Ownable {
 
 contract CryptolazSM is Ownable {
     using SafeMath for uint256;
-    uint256 public constant DEVELOPER_RATE = 40; //per thousand
-    uint256 public constant MARKETING_RATE = 40;
-    uint256 public constant REFERENCE_RATE = 180;
+    uint256 public constant DEVELOPER_RATE = 20; //per thousand
+    uint256 public constant MARKETING_RATE = 20;
+    uint256 public constant REFERENCE_RATE = 100;
     uint256 public constant REFERENCE_LEVEL1_RATE = 100;
     uint256 public constant REFERENCE_LEVEL2_RATE = 50;
     uint256 public constant REFERENCE_LEVEL3_RATE = 30;
@@ -151,7 +151,7 @@ contract CryptolazSM is Ownable {
         uid2Investor[latestReferrerCode].addr = msg.sender;
         uid2Investor[latestReferrerCode].referrer = 0;
         uid2Investor[latestReferrerCode].planCount = 0;
-        investmentPlans_.push(Objects.Plan(250, 0)); //25% daily, lifetime
+        investmentPlans_.push(Objects.Plan(250, 0)); //25% daily, 200%
     }
 
     function getCurrentPlans() public view returns (uint256[] memory, uint256[] memory, uint256[] memory) {
