@@ -1,0 +1,36 @@
+{
+  "dataset": "SOL/USDC Orca 15M",
+  "source_rows": 3000,
+  "unique_rows": 2998,
+  "duplicate_timestamps": [1788255000, 1787355900],
+  "duplicate_conflicts": 0,
+  "interval_seconds": 900,
+  "gap_count": 0,
+  "invalid_ohlcv_count": 0,
+  "first_timestamp": 1786456800,
+  "last_timestamp": 1789154100,
+  "clean_csv_sha256": "ec7c21859d9292d341768c04c346dfbc2a0936b46af8d861e1644ded49c14b2f",
+  "source_files": [
+    {
+      "name": "SOL_USDC_ORCA_15M_BLOCK1.json",
+      "rows": 1000,
+      "sha256": "6a4da7ea4ebe1534a2531c9869e0b0d1fc2338e5444ee25d3840c625e5efd17e"
+    },
+    {
+      "name": "SOL_USDC_ORCA_15M_BLOCK2.json",
+      "rows": 1000,
+      "sha256": "d7967c7dd4f54a3e0865df35f8772635bc7c800e30d8646a860fc5693b63af57"
+    },
+    {
+      "name": "SOL_USDC_ORCA_15M_BLOCK3.json",
+      "rows": 1000,
+      "sha256": "4be134b2890cf46b8a1b733934a7ac317679762e6bf657dd9e0c265f26f639fd"
+    }
+  ],
+  "storage": {
+    "repository": "cryptolazsmc/CryptolazSM",
+    "branch": "research/meta-orca-sol-usdc-15m",
+    "format": "CSV split into ordered parts",
+    "part_rule": "Concatenate parts in numeric order, keeping the header from part_01 only."
+  }
+}
